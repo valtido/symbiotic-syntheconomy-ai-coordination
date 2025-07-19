@@ -1,0 +1,286 @@
+# Symbiotic Syntheconomy GRC - Cursor Rules
+
+# Lead Developer: Valtid Caushi
+
+# Project: Global Regeneration Ceremony v1.0
+
+## 🏗️ Architecture Principles
+
+### Technology Stack Enforcement
+
+- **Backend**: Use Node.js v23.6.0 + TypeScript with Fastify framework
+- **Frontend**: Use Next.js 15 with TypeScript and i18next for internationalization
+- **Smart Contracts**: Use Solidity with OpenZeppelin patterns on Base testnet
+- **Database**: Use MongoDB Atlas with proper indexing and connection pooling
+- **Storage**: Use IPFS for immutable ritual metadata storage
+- **AI Filters**: Implement ESEP and CEDA with strict validation rules
+
+### Code Quality Standards
+
+- **TypeScript**: Use strict mode with no implicit any types
+- **Error Handling**: Implement comprehensive error handling with proper logging
+- **Security**: Follow OWASP guidelines and OpenZeppelin security patterns
+- **Testing**: Maintain 90%+ test coverage for all critical components
+- **Documentation**: Include JSDoc comments for all public APIs
+
+## 🌱 Cultural Authenticity Rules
+
+### ESEP (Ethical-Spiritual Evaluation Protocol)
+
+- **Maximum Emotional Skew**: 0.7 (lower is better)
+- **Balance Requirements**: Ethical and spiritual elements must be harmoniously balanced
+- **Negative Content**: Penalize hate speech, violence, exclusion, discrimination
+- **Positive Reinforcement**: Reward compassion, respect, community, harmony
+- **Validation**: All rituals must pass ESEP validation before approval
+
+### CEDA (Cultural Expression Detection Algorithm)
+
+- **Minimum Cultural References**: 2 cultural references required
+- **Cultural Diversity**: Encourage representation from multiple traditions
+- **Authenticity Score**: Minimum 0.5 for respectful cultural representation
+- **Context Validation**: Ensure cultural elements are used appropriately
+- **Expert Review**: High-scoring rituals may require cultural expert review
+
+### Narrative Forensics
+
+- **Polarization Detection**: Identify and prevent divisive narratives
+- **Bias Mitigation**: Ensure balanced representation across cultures
+- **Community Harmony**: Promote narratives that unite rather than divide
+- **Fact Verification**: Validate claims against established cultural knowledge
+- **Transparency**: Clear reasoning for all narrative decisions
+
+## 🔧 Development Workflow
+
+### File Structure Standards
+
+```
+/backend
+  /src
+    /endpoints          # API endpoints
+    /ai                 # AI filters and validation
+    /services           # Business logic services
+    /models             # Data models and schemas
+    /utils              # Utility functions
+    /middleware         # Custom middleware
+    /config             # Configuration files
+
+/contracts
+  /contracts            # Solidity smart contracts
+  /scripts              # Deployment and utility scripts
+  /test                 # Contract tests
+  /deploy               # Deployment configurations
+
+/frontend
+  /src
+    /pages              # Next.js pages
+    /components         # Reusable React components
+    /hooks              # Custom React hooks
+    /utils              # Frontend utilities
+    /styles             # CSS and styling
+    /locales            # i18next translations
+
+/schemas
+  *.md                  # Documentation and specifications
+  *.grc                 # Sample ritual files
+```
+
+### Naming Conventions
+
+- **Files**: Use kebab-case for file names
+- **Functions**: Use camelCase for function names
+- **Constants**: Use UPPER_SNAKE_CASE for constants
+- **Classes**: Use PascalCase for class names
+- **Interfaces**: Use PascalCase with 'I' prefix for interfaces
+
+### Code Organization
+
+- **Single Responsibility**: Each function/class should have one clear purpose
+- **Dependency Injection**: Use dependency injection for better testability
+- **Configuration**: Externalize all configuration values
+- **Logging**: Use structured logging with appropriate levels
+- **Error Boundaries**: Implement proper error boundaries in React components
+
+## 🌍 Bioregion Specifications
+
+### Tech Haven
+
+- **ID**: `tech-haven`
+- **Characteristics**: Digital innovation, sustainable technology, urban regeneration
+- **Cultural Traditions**: Modern tech culture, digital nomadism, hacktivism
+- **Focus Areas**: Renewable energy, smart cities, digital democracy
+
+### Mythic Forest
+
+- **ID**: `mythic-forest`
+- **Characteristics**: Ancient wisdom, biodiversity, spiritual connection
+- **Cultural Traditions**: Indigenous knowledge, animism, earth-based spirituality
+- **Focus Areas**: Forest conservation, traditional medicine, sacred ecology
+
+### Isolated Bastion
+
+- **ID**: `isolated-bastion`
+- **Characteristics**: Self-sufficiency, resilience, community autonomy
+- **Cultural Traditions**: Survival skills, homesteading, mutual aid
+- **Focus Areas**: Food sovereignty, local economies, disaster preparedness
+
+## 🔒 Security and Privacy
+
+### Data Protection
+
+- **Encryption**: Encrypt sensitive data at rest and in transit
+- **Access Control**: Implement role-based access control (RBAC)
+- **Audit Logging**: Log all critical operations for transparency
+- **Data Minimization**: Collect only necessary data
+- **User Consent**: Obtain explicit consent for data processing
+
+### Smart Contract Security
+
+- **OpenZeppelin**: Use OpenZeppelin contracts for security
+- **Reentrancy Protection**: Implement reentrancy guards
+- **Access Control**: Use proper access control modifiers
+- **Emergency Pause**: Include emergency pause functionality
+- **Upgradeability**: Plan for contract upgrades if needed
+
+### API Security
+
+- **Rate Limiting**: Implement rate limiting on all endpoints
+- **Input Validation**: Validate all inputs thoroughly
+- **CORS**: Configure CORS properly for cross-origin requests
+- **Authentication**: Use JWT tokens for API authentication
+- **Authorization**: Implement proper authorization checks
+
+## 🧪 Testing Requirements
+
+### Unit Testing
+
+- **Coverage**: Maintain 90%+ test coverage
+- **Mocking**: Use proper mocking for external dependencies
+- **Edge Cases**: Test edge cases and error conditions
+- **Performance**: Include performance tests for critical paths
+- **Integration**: Test integration between components
+
+### Smart Contract Testing
+
+- **Gas Optimization**: Test gas usage and optimize where possible
+- **Security**: Test for common vulnerabilities
+- **Upgrade Paths**: Test upgrade scenarios if applicable
+- **Edge Cases**: Test boundary conditions and edge cases
+- **Integration**: Test integration with other contracts
+
+### Frontend Testing
+
+- **Component Testing**: Test all React components
+- **User Interactions**: Test user interactions and workflows
+- **Accessibility**: Ensure accessibility compliance
+- **Cross-browser**: Test across different browsers
+- **Performance**: Test performance and loading times
+
+## 📚 Documentation Standards
+
+### Code Documentation
+
+- **JSDoc**: Use JSDoc for all public APIs
+- **README**: Maintain comprehensive README files
+- **API Docs**: Generate API documentation from code
+- **Examples**: Provide usage examples for complex features
+- **Changelog**: Maintain a changelog for version tracking
+
+### Technical Documentation
+
+- **Architecture**: Document system architecture and design decisions
+- **Deployment**: Document deployment procedures
+- **Troubleshooting**: Document common issues and solutions
+- **Contributing**: Document contribution guidelines
+- **Security**: Document security considerations and procedures
+
+## 🌱 Cultural Sensitivity Guidelines
+
+### Indigenous Knowledge
+
+- **Respect**: Always respect indigenous knowledge and traditions
+- **Permission**: Obtain proper permissions before using cultural elements
+- **Attribution**: Give proper attribution to cultural sources
+- **Consultation**: Consult with cultural experts when needed
+- **Preservation**: Work to preserve and protect cultural knowledge
+
+### Cultural Appropriation Prevention
+
+- **Education**: Educate team members about cultural appropriation
+- **Review Process**: Implement cultural review processes
+- **Community Input**: Seek input from affected communities
+- **Transparency**: Be transparent about cultural influences
+- **Amends**: Be prepared to make amends if mistakes occur
+
+### Inclusive Design
+
+- **Accessibility**: Ensure accessibility for all users
+- **Cultural Diversity**: Represent diverse cultures respectfully
+- **Language**: Support multiple languages and cultural contexts
+- **Representation**: Ensure diverse representation in content
+- **Feedback**: Seek feedback from diverse communities
+
+## 🚀 Performance and Scalability
+
+### Backend Performance
+
+- **Database Optimization**: Optimize database queries and indexing
+- **Caching**: Implement appropriate caching strategies
+- **Load Balancing**: Plan for load balancing and horizontal scaling
+- **Monitoring**: Implement comprehensive monitoring and alerting
+- **Optimization**: Continuously optimize performance bottlenecks
+
+### Frontend Performance
+
+- **Bundle Size**: Optimize bundle size and loading times
+- **Lazy Loading**: Implement lazy loading for better performance
+- **Caching**: Use appropriate caching strategies
+- **Optimization**: Optimize images and assets
+- **Monitoring**: Monitor frontend performance metrics
+
+### Smart Contract Performance
+
+- **Gas Optimization**: Optimize gas usage for all operations
+- **Batch Operations**: Use batch operations where possible
+- **Storage Optimization**: Optimize storage usage
+- **Event Optimization**: Use events efficiently for off-chain data
+- **Upgrade Planning**: Plan for future upgrades and optimizations
+
+## 🔄 Continuous Integration/Deployment
+
+### CI/CD Pipeline
+
+- **Automated Testing**: Run all tests automatically
+- **Code Quality**: Check code quality and style
+- **Security Scanning**: Scan for security vulnerabilities
+- **Deployment**: Automate deployment to staging and production
+- **Monitoring**: Monitor deployment success and rollback if needed
+
+### Quality Gates
+
+- **Test Coverage**: Require minimum test coverage
+- **Code Review**: Require code review for all changes
+- **Security Review**: Require security review for critical changes
+- **Performance**: Require performance benchmarks
+- **Documentation**: Require updated documentation
+
+## 🌍 Environmental Considerations
+
+### Sustainability
+
+- **Energy Efficiency**: Optimize for energy efficiency
+- **Carbon Footprint**: Minimize carbon footprint
+- **Green Hosting**: Use green hosting providers
+- **Sustainable Practices**: Follow sustainable development practices
+- **Environmental Impact**: Consider environmental impact of decisions
+
+### Regenerative Practices
+
+- **Community Building**: Build strong, supportive communities
+- **Knowledge Sharing**: Share knowledge and resources
+- **Collaboration**: Foster collaboration and cooperation
+- **Innovation**: Encourage innovative solutions
+- **Impact**: Focus on positive environmental and social impact
+
+---
+
+**Remember**: These rules are designed to ensure the GRC project maintains the highest standards of cultural sensitivity, technical excellence, and environmental responsibility. Always prioritize the well-being of communities and the planet in all development decisions.
