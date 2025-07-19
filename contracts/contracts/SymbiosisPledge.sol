@@ -146,13 +146,20 @@ contract SymbiosisPledge is Ownable, ReentrancyGuard, Pausable {
     }
 
     // Constructor
-    constructor() Ownable(msg.sender) {
+    constructor() Ownable() {
         totalPledges = 0;
         fulfilledPledges = 0;
         totalCommitment = 0;
         verifiedCommitment = 0;
     }
+    mapping(string => string) public bioregions;
 
+
+    function registerBioregion(string memory id, string memory name) public onlyOwner {
+        require(bytes(id).length > 0, "ID required");
+        require(bytes(name).length > 0, "Name required");
+        bioregions[id] = name;
+    }
     /**
      * @dev Create a new regeneration pledge
      * @param bioregionId The bioregion identifier

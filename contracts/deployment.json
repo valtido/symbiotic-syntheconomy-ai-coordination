@@ -1,0 +1,14 @@
+{
+  "network": "base-testnet",
+  "deployer": "0x7d977faBCFf3A3055f16c716C4f9FCE8303C3112",
+  "contracts": {
+    "GRCRitualSubmission": "0x5191fAC3BD78Dfd9dEb12503e4B9f0E312398fB8",
+    "SymbiosisPledge": "0x1102c76E7f7ADfBCb17F8Da84edfe6602879dBAE"
+  },
+  "bioregions": [
+    "tech-haven",
+    "mythic-forest",
+    "isolated-bastion"
+  ],
+  "timestamp": "2025-07-19T19:13:28.452Z"
+}

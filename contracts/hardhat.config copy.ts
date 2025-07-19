@@ -1,16 +1,17 @@
-import * as dotenv from 'dotenv';
+import * as dotenv from "dotenv";
 dotenv.config();
 
-import { HardhatUserConfig } from 'hardhat/config';
-import '@nomicfoundation/hardhat-toolbox';
+import { HardhatUserConfig } from "hardhat/config";
+import "@nomicfoundation/hardhat-toolbox";
+
 import '@typechain/hardhat';
-// import 'hardhat-deploy';
+import 'hardhat-deploy';
 import 'hardhat-gas-reporter';
 import 'solidity-coverage';
 
 const config: HardhatUserConfig = {
   solidity: {
-    version: '0.8.24',
+    version: '0.8.20',
     settings: {
       optimizer: {
         enabled: true,
@@ -46,12 +47,10 @@ const config: HardhatUserConfig = {
     coinmarketcap: process.env.COINMARKETCAP_API_KEY,
   },
   etherscan: {
-    apiKey: process.env.BASESCAN_API_KEY,
-
-    // apiKey: {
-    //   'base-testnet': process.env.BASESCAN_API_KEY || '',
-    //   'base-mainnet': process.env.BASESCAN_API_KEY || '',
-    // },
+    apiKey: {
+      'base-testnet': process.env.BASESCAN_API_KEY || '',
+      'base-mainnet': process.env.BASESCAN_API_KEY || '',
+    },
     customChains: [
       {
         network: 'base-testnet',
@@ -71,19 +70,26 @@ const config: HardhatUserConfig = {
       },
     ],
   },
-
+  namedAccounts: {
+    deployer: {
+      default: 0,
+    },
+    ritualSubmitter: {
+      default: 1,
+    },
+    daoMember: {
+      default: 2,
+    },
+  },
   paths: {
     sources: './contracts',
     tests: './test',
     cache: './cache',
     artifacts: './artifacts',
+    deploy: './deploy',
   },
   mocha: {
     timeout: 40000,
-  },
-  typechain: {
-    outDir: 'typechain-types',
-    target: 'ethers-v6',
   },
 };
 
