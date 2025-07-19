@@ -9,6 +9,7 @@
     "contracts"
   ],
   "scripts": {
+    "log:append": "ts-node scripts/appendLog.ts",
     "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
     "dev:backend": "cd backend && npm run dev",
     "dev:frontend": "cd frontend && npm run dev",
@@ -39,5 +40,8 @@
     "bioregions"
   ],
   "author": "Valtid Caushi",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@octokit/rest": "^22.0.0"
+  }
 }
